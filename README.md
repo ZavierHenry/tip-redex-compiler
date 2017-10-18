@@ -27,7 +27,7 @@ Converts TIP benchmarks to Redex
 
 ### Known Issues ###
 
-This compiler does not have for benchmarks with the following features:
+Benchmarks with the following features are unsupported by this compiler:
 
 * Let bindings
 * First-order functions
