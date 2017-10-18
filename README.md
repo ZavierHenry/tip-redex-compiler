@@ -25,6 +25,14 @@ Converts TIP benchmarks to Redex
 * Code review
 * Other guidelines
 
+### Known Issues ###
+
+This compiler does not have for benchmarks with the following features:
+
+* Let bindings
+* First-order functions
+* Existential quantifiers
+
 ### Who do I talk to? ###
 
 * Zavier Henry
