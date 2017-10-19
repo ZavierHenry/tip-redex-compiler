@@ -15,15 +15,23 @@ Converts TIP benchmarks to Redex
 * Summary of set up
 * Configuration
 * Dependencies
-* Database configuration
 * How to run tests
 * Deployment instructions
+
+
+* Explain transformer file
+* Explain transformer file options
+* 
 
 ### Contribution guidelines ###
 
 * Writing tests
 * Code review
 * Other guidelines
+
+
+* Mention test files
+* Explain pattern-check test function
 
 ### Known Issues ###
 
@@ -32,6 +40,7 @@ Benchmarks with the following features are unsupported by this compiler:
 * Let bindings
 * First-order functions
 * Existential quantifiers
+* Matching over expressions other than a single variable
 
 ### Who do I talk to? ###
 
