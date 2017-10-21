@@ -40,7 +40,17 @@ Benchmarks with the following features are unsupported by this compiler:
 * Let bindings
 * First-order functions
 * Existential quantifiers
-* Matching over expressions other than a single variable
+* Matching over expressions other than a single variable e.g.
+
+~~~
+
+(match (< y 0)
+	(case false
+		(match x (case (cons z x2) (ite (= y 0) z (!! x2 (- y 1)))))))
+
+~~~
+
+
 
 ### Who do I talk to? ###
 
