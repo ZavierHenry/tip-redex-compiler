@@ -1,0 +1,7 @@
+
+# Racket-generated file types #
+
+*.bak
+*.zo
+*.app
+*.exe
