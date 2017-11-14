@@ -48,9 +48,12 @@ Builds the benchmark as a file type determined by the destination filename forma
 Supported file types:
 
 	No file extension (Unix executable)
-	.rkt (Racket file)
 	.exe (Windows executable)
 	.app (Apple application)
+
+List of flag options:
+	
+	--help: Shows this help page
 
 ~~~
 
@@ -68,12 +71,20 @@ List of flags:
 
 ~~~
 
+&nbsp;
+
+Note: The shell script is a Unix bash script. If the script cannot be run, you can still manually run benchmarks. To do so, make sure to put "#lang s-exp [FILENAME]" at the very beginning of the benchmark, where [FILENAME] points to the "tip-syntax.rkt" file.
+Ensure that "tip-compiler.rkt" and "tip-syntax.rkt" are both in the same directory.
+
+Then, run "racket [BENCHMARK]" where [BENCHMARK] points to your benchmark.
+
 
 ### Testing guidelines ###
 
 Tests for the compiler can be written following the [RackUnit API](https://docs.racket-lang.org/rackunit/api.html?q=rackunit). 
 
 Additionally, compiler tests and test macros are in "tip-tests.rkt" In order to import the test macros, put (require [TESTFILE]) at the top of your test file where [TESTFILE] is a filename that points to "tip-tests.rkt".
+Make sure that "tip-tests.rkt" and "tip-compiler.rkt" are in the same directory.
 
 &nbsp;
 "tip-tests.rkt" provides these testing utilities:
