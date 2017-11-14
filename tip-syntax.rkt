@@ -1,7 +1,6 @@
 #lang racket
 
-(require (for-syntax "tip-compiler.rkt" racket)
-         redex/reduction-semantics)
+(require (for-syntax "tip-compiler.rkt" racket))
 
 (provide (except-out (all-from-out racket)
                      #%module-begin)
